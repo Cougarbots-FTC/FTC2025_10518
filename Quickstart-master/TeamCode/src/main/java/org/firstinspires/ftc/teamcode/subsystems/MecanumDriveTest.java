@@ -35,7 +35,6 @@ public class MecanumDriveTest extends OpMode {
         back_left    = hardwareMap.get(DcMotor.class, "BackLeft");
         back_right   = hardwareMap.get(DcMotor.class, "BackRight");
 
-        front_right.setDirection(DcMotor.Direction.REVERSE);
         front_left.setDirection(DcMotor.Direction.REVERSE);
         front_right.setDirection(DcMotor.Direction.FORWARD);
 
