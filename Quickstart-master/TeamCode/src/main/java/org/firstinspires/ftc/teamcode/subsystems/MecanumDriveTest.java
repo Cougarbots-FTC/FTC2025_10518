@@ -67,6 +67,13 @@ public class MecanumDriveTest extends OpMode {
          * from, refer to
          * https://en.wikipedia.org/wiki/Rotation_(mathematics)#Two_dimensions
          */
+        double speed;
+
+        if(gamepad1.right_bumper) {
+            speed = 0.5;
+        } else {
+            speed = 1;
+        }
 
         // You may need to multiply some of these by -1 to invert direction of
         // the motor.  This is not an issue with the calculations themselves.
@@ -77,10 +84,10 @@ public class MecanumDriveTest extends OpMode {
         //Obtains values for each motor through the positions through values
         //from  left joystick which has up/down(vertical) and left/right values(horizontal), and right joystick which has left/right values(pivot)
         double denominator = Math.max(Math.abs(vertical) + Math.abs(horizontal) + Math.abs(pivot), 1);
-        double rightFrontPower = (vertical + horizontal + pivot) / denominator;
-        double rightBackPower = (vertical - horizontal + pivot) / denominator;
-        double LeftFrontPower = (vertical - horizontal - pivot) / denominator;
-        double LeftBackPower = (vertical + horizontal - pivot) / denominator;
+        double rightFrontPower = (vertical + horizontal + pivot) / denominator * speed;
+        double rightBackPower = (vertical - horizontal + pivot) / denominator * speed;
+        double LeftFrontPower = (vertical - horizontal - pivot) / denominator * speed;
+        double LeftBackPower = (vertical + horizontal - pivot) / denominator * speed;
 
         front_left.setPower(LeftFrontPower);
         front_right.setPower(rightFrontPower);
