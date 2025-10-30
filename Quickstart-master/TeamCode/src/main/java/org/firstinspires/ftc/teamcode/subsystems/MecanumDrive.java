@@ -3,6 +3,7 @@ package org.firstinspires.ftc.teamcode.subsystems;
 import com.qualcomm.robotcore.eventloop.opmode.OpMode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 import com.qualcomm.robotcore.hardware.DcMotor;
+import com.qualcomm.robotcore.hardware.Gamepad;
 import com.qualcomm.robotcore.hardware.HardwareMap;
 
 /**
@@ -19,7 +20,12 @@ public class MecanumDrive {
     private DcMotor back_left   = null;
     private DcMotor back_right  = null;
 
+    private final Gamepad driver1, driver2;
+
     public MecanumDrive(OpMode opMode) {
+
+        driver1 = opMode.gamepad1;
+        driver2 = opMode.gamepad2;
 
         HardwareMap hardwareMap = opMode.hardwareMap;
         // Name strings must match up with the config on the Robot Controller
@@ -36,12 +42,11 @@ public class MecanumDrive {
 
     public void teleOp() {
 
-    //initialize gamepad or whatever later
-
+    //initialize gamepad or whatever late
 
         double speed;
 
-        if(gamepad1.right_bumper) {
+        if(driver1.right_bumper) {
             speed = 0.5;
         } else {
             speed = 1;
@@ -49,9 +54,9 @@ public class MecanumDrive {
 
         // You may need to multiply some of these by -1 to invert direction of
         // the motor.  This is not an issue with the calculations themselves.
-        double vertical = gamepad1.left_stick_y;
-        double horizontal = gamepad1.left_stick_x * 1.1; //  Multiply by 1.1 to negate imperfect strafing
-        double pivot = gamepad1.right_stick_x;
+        double vertical = driver1.left_stick_y;
+        double horizontal = driver1.left_stick_x * 1.1; //  Multiply by 1.1 to negate imperfect strafing
+        double pivot = driver1.right_stick_x;
 
         //Obtains values for each motor through the positions through values
         //from  left joystick which has up/down(vertical) and left/right values(horizontal), and right joystick which has left/right values(pivot)
