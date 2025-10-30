@@ -1,25 +1,28 @@
 package org.firstinspires.ftc.teamcode.opModes;
 
-@TeleOp(name="driver centric teleop");
+import com.qualcomm.robotcore.eventloop.opmode.OpMode;
+import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
+import org.firstinspires.ftc.teamcode.subsystems.MecanumDrive;
 
-public class DriverCentricTeleOp extends opMode{
+@TeleOp(name="driver centric teleop")
+public class DriverCentricTeleOp extends OpMode {
 
 //    private Intake intake;
 //    private Delivery delivery;
-    private MecanumDrive MecanumDriveTest;
+    private MecanumDrive mecanumDrive;
 
     @Override
 
     public void init() {
-        intake = new Intake(this);
-        delivery = new Delivery(this);
+//        intake = new Intake(this);
+//        delivery = new Delivery(this);
         mecanumDrive = new MecanumDrive(this);
 
     }
 
     @Override
     public void loop() {
-        mecanumDrive.mecanumDrive();
+        mecanumDrive.teleOp();
 //        delivery.teleOp();
 //        intake.teleOp();
     }
