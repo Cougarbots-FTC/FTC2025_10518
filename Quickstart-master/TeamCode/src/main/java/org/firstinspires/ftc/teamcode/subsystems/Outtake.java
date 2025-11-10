@@ -13,10 +13,6 @@ public class Outtake {
     }
 
     public void teleOp() {
-        if(gamepad1.b) {
-            outtake_motor.setPower(1);
-        } else {
-            outtake_motor.setPower(0);
-        }
+        outtake_motor.setPower(driver1.rightTrigger);
     }
 }
