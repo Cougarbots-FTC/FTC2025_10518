@@ -70,4 +70,16 @@ public class MecanumDrive {
         back_left.setPower(LeftBackPower);
         back_right.setPower(rightBackPower);
     }
+
+    public void auto(int time) {
+        front_left.setPower(1);
+        front_right.setPower(1);
+        back_left.setPower(1);
+        back_right.setPower(1);
+        sleep(time);
+        front_left.setPower(0);
+        front_right.setPower(0);
+        back_left.setPower(0);
+        back_right.setPower(0);
+    }
 }
