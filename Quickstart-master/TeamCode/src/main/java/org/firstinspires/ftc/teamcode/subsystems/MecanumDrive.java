@@ -11,7 +11,6 @@ import com.qualcomm.robotcore.hardware.HardwareMap;
  *
  * @author Brandon Gong
  */
-@TeleOp(name="Mecanum Drive Example", group="Iterative Opmode")
 public class MecanumDrive {
 
     private DcMotor front_left  = null;
