@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e1b264da-4233-4a71-88d1-4e8cb28af317" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Quickstart-master/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/opModes/DriverCentricTeleOp.java" beforeDir="false" afterPath="$PROJECT_DIR$/Quickstart-master/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/opModes/DriverCentricTeleOp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Quickstart-master/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/subsystems/Gate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Quickstart-master/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/subsystems/Intake.java" beforeDir="false" afterPath="$PROJECT_DIR$/Quickstart-master/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/subsystems/Intake.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Quickstart-master/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/subsystems/Outtake.java" beforeDir="false" afterPath="$PROJECT_DIR$/Quickstart-master/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/subsystems/Outtake.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +42,11 @@
     "last_opened_file_path": "C:/Users/eomki/OneDrive/Documents/GitHub/FTC2025_10518/Quickstart-master/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/subsystems"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\eomki\OneDrive\Documents\GitHub\FTC2025_10518\Quickstart-master\TeamCode\src\main\java\org\firstinspires\ftc\teamcode\subsystems" />
+    </key>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="e1b264da-4233-4a71-88d1-4e8cb28af317" name="Changes" comment="" />
