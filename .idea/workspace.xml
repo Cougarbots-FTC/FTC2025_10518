@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e1b264da-4233-4a71-88d1-4e8cb28af317" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/caches/deviceStreaming.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/deviceStreaming.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Quickstart-master/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/opModes/RightSideAuto.java" beforeDir="false" afterPath="$PROJECT_DIR$/Quickstart-master/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/opModes/RightSideAuto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Quickstart-master/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/pedroPathing/Tuning.java" beforeDir="false" afterPath="$PROJECT_DIR$/Quickstart-master/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/pedroPathing/Tuning.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Quickstart-master/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/subsystems/MecanumDrive.java" beforeDir="false" afterPath="$PROJECT_DIR$/Quickstart-master/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/subsystems/MecanumDrive.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Quickstart-master/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/subsystems/Intake.java" beforeDir="false" afterPath="$PROJECT_DIR$/Quickstart-master/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/subsystems/Intake.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
