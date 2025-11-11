@@ -1,8 +1,11 @@
 package org.firstinspires.ftc.teamcode.subsystems;
 
+import static java.lang.Thread.sleep;
+
 import com.qualcomm.robotcore.eventloop.opmode.OpMode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 import com.qualcomm.robotcore.hardware.DcMotor;
+import com.qualcomm.robotcore.hardware.Gamepad;
 import com.qualcomm.robotcore.hardware.HardwareMap;
 
 /**
@@ -75,7 +78,11 @@ public class MecanumDrive {
         front_right.setPower(1);
         back_left.setPower(1);
         back_right.setPower(1);
-        sleep(time);
+        try {
+            sleep(time);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
         front_left.setPower(0);
         front_right.setPower(0);
         back_left.setPower(0);

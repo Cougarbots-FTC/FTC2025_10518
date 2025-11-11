@@ -17,7 +17,7 @@ public class RightSideAuto extends LinearOpMode {
         waitForStart();
 
         if (opModeIsActive()) {
-            mecanumDrive.auto(1000)
+            mecanumDrive.auto(1000);
         }
     }
 
