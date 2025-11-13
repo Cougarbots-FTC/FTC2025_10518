@@ -13,6 +13,7 @@ public class DriverCentricTeleOp extends OpMode {
     private MecanumDrive mecanumDrive;
     private Intake intake;
     private Outtake outtake;
+    private Gate gate;
 
     @Override
 
@@ -31,6 +32,7 @@ public class DriverCentricTeleOp extends OpMode {
         mecanumDrive.teleOp();
         outtake.teleOp();
         intake.teleOp();
+        gate.teleOp();
     }
 
 }
