@@ -11,15 +11,15 @@ public class Outtake {
     private final Gamepad driver1, driver2;
     private DcMotor outtake_motor  = null;
     public Outtake(OpMode opmode) {
-        driver1 = opMode.gamepad1;
-        driver2 = opMode.gamepad2;
+        driver1 = opmode.gamepad1;
+        driver2 = opmode.gamepad2;
 
-        HardwareMap hardwareMap = opMode.hardwareMap;
+        HardwareMap hardwareMap = opmode.hardwareMap;
 
         outtake_motor  = hardwareMap.get(DcMotor.class, "Outtake");
     }
 
     public void teleOp() {
-        outtake_motor.setPower(driver1.right_trigger);
+        outtake_motor.setPower(driver2.right_stick_y);
     }
 }

@@ -13,7 +13,7 @@ public class Gate {
     private Servo right_servo  = null;
 
     private int debounceCounter = 0;
-    public void gate(OpMode opMode) {
+    public Gate(OpMode opMode) {
         driver1 = opMode.gamepad1;
         driver2 = opMode.gamepad2;
 
@@ -24,7 +24,7 @@ public class Gate {
     }
 
     public void teleOp() {
-        if(driver1.x) {
+        if(driver2.x) {
             if(debounceCounter > DEBOUNCE_THRESHOLD) {
                 if(left_servo.getPosition() == 0) {
                     left_servo.setPosition(1);

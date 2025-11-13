@@ -22,6 +22,7 @@ public class DriverCentricTeleOp extends OpMode {
         mecanumDrive = new MecanumDrive(this);
         intake = new Intake(this);
         outtake = new Outtake(this);
+        gate = new Gate(this);
 
     }
 

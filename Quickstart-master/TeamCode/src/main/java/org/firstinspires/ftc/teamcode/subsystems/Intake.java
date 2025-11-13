@@ -14,12 +14,12 @@ public class Intake {
         driver1 = opmode.gamepad1;
         driver2 = opmode.gamepad2;
 
-        HardwareMap hardwareMap = opMode.hardwareMap;
+        HardwareMap hardwareMap = opmode.hardwareMap;
 
         intake_motor  = hardwareMap.get(DcMotor.class, "Intake");
     }
 
     public void teleOp() {
-        intake_motor.setPower(driver1.left_trigger);
+        intake_motor.setPower(driver2.left_stick_y);
     }
 }
