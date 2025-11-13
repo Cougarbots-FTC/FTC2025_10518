@@ -11,8 +11,8 @@ public class Intake {
     private final Gamepad driver1, driver2;
     private DcMotor intake_motor  = null;
     public Intake(OpMode opmode) {
-        driver1 = opMode.gamepad1;
-        driver2 = opMode.gamepad2;
+        driver1 = opmode.gamepad1;
+        driver2 = opmode.gamepad2;
 
         HardwareMap hardwareMap = opMode.hardwareMap;
 
