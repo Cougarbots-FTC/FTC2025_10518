@@ -26,18 +26,19 @@ public class Gate {
     public void teleOp() {
         if(driver2.x) {
             if(debounceCounter > DEBOUNCE_THRESHOLD) {
-                if(left_servo.getPosition() == 0) {
+                if (left_servo.getPosition() == 0) {
                     left_servo.setPosition(1);
-                    right_servo.setPosition(1);
+                    right_servo.setPosition(0);
                 } else {
                     left_servo.setPosition(0);
-                    left_servo.setPosition(0);
+                    right_servo.setPosition(1);
                 }
                 //open
                 debounceCounter = 0;
-            } else {
-                debounceCounter++;
             }
+        } else {
+                debounceCounter++;
+            
         }
     }
 }
