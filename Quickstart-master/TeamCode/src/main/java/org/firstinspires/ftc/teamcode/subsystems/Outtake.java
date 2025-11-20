@@ -9,7 +9,7 @@ import com.qualcomm.robotcore.hardware.HardwareMap;
 
 public class Outtake {
     private final Gamepad driver1, driver2;
-    private DcMotor outtake_motor  = null;
+    private DcMotorEx outtake_motor  = null;
     public Outtake(OpMode opmode) {
         driver1 = opmode.gamepad1;
         driver2 = opmode.gamepad2;
@@ -20,6 +20,7 @@ public class Outtake {
     }
 
     public void teleOp() {
+        
         outtake_motor.setPower(driver2.right_stick_y);
     }
 }
