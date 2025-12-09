@@ -26,7 +26,7 @@ public class Gate {
 
     public void teleOp() {
         left_servo.setPower(driver2.left_stick_y);
-        right_servo.setPower(driver2.left_stick_y);
+        right_servo.setPower(driver2.left_stick_y * -1);
 //        if(driver2.x) {
 //            if(debounceCounter > DEBOUNCE_THRESHOLD) {
 //                if (left_servo.getPosition() == 0) {
