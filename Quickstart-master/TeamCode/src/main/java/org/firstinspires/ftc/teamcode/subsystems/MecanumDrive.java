@@ -16,10 +16,10 @@ import com.qualcomm.robotcore.hardware.HardwareMap;
  */
 public class MecanumDrive {
 
-    private DcMotor front_left  = null;
-    private DcMotor front_right = null;
-    private DcMotor back_left   = null;
-    private DcMotor back_right  = null;
+    public DcMotor front_left  = null;
+    public DcMotor front_right = null;
+    public DcMotor back_left   = null;
+    public DcMotor back_right  = null;
 
     private final Gamepad driver1, driver2;
 

@@ -10,8 +10,8 @@ public class Gate {
 
     private static final int DEBOUNCE_THRESHOLD = 30;
     private Gamepad driver1, driver2;
-    private CRServo left_servo  = null;
-    private CRServo right_servo  = null;
+    public CRServo left_servo  = null;
+    public CRServo right_servo  = null;
 
 //    private int debounceCounter = 0;
     public Gate(OpMode opMode) {
