@@ -36,11 +36,11 @@ public class MecanumDrive {
         back_left    = hardwareMap.get(DcMotor.class, "BackLeft");
         back_right   = hardwareMap.get(DcMotor.class, "BackRight");
 
-        front_left.setDirection(DcMotor.Direction.REVERSE);
+//        front_left.setDirection(DcMotor.Direction.REVERSE);
 //        front_right.setDirection(DcMotor.Direction.FORWARD);
         back_left.setDirection(DcMotor.Direction.REVERSE);
         back_right.setDirection(DcMotor.Direction.REVERSE);
-        front_right.setDirection(DcMotor.Direction.REVERSE);
+//        front_right.setDirection(DcMotor.Direction.REVERSE);
 
     }
 
@@ -59,7 +59,7 @@ public class MecanumDrive {
         // You may need to multiply some of these by -1 to invert direction of
         // the motor.  This is not an issue with the calculations themselves.
         double vertical = driver1.left_stick_y;
-        double horizontal = driver1.left_stick_x * 1.1; //  Multiply by 1.1 to negate imperfect strafing
+        double horizontal = driver1.left_stick_x * -1.1; //  Multiply by 1.1 to negate imperfect strafing
         double pivot = driver1.right_stick_x;
 
         //Obtains values for each motor through the positions through values
