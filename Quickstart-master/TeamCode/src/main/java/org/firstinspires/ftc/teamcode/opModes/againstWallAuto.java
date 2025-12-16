@@ -20,8 +20,8 @@ public class againstWallAuto extends LinearOpMode {
         Gate gate = new Gate(this);
 
         if (opModeIsActive()) {
-            outtake.outtake_motor.setVelocity(775);
-            sleep(1500);
+            outtake.outtake_motor.setVelocity(500);
+            sleep(500);
             gate.right_servo.setPower(1);//1
             gate.left_servo.setPower(-1);//-1
             sleep(5000);
