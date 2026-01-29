@@ -22,7 +22,7 @@ public class Lift {
     }
 
     public void teleOp() {
-        if(driver2.left_trigger > 0.1) {
+        if(driver2.right_trigger > 0.1) {
             liftMotor.setPower(1);
         } else {
             liftMotor.setPower(0);
