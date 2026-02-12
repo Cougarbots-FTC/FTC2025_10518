@@ -5,7 +5,7 @@ import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 
 import org.firstinspires.ftc.teamcode.subsystems.Gate;
 import org.firstinspires.ftc.teamcode.subsystems.MecanumDrive;
-import org.firstinspires.ftc.teamcode.subsystems.Outtake;
+import org.firstinspires.ftc.teamcode.subsystems.PIDOuttake;
 
 @Autonomous(name="againstWallAuto", group="Autonomous")
 public class againstWallAuto extends LinearOpMode {
@@ -16,26 +16,29 @@ public class againstWallAuto extends LinearOpMode {
     public void runOpMode() {
         waitForStart();
         MecanumDrive mecanumDrive = new MecanumDrive(this);
-        Outtake outtake = new Outtake(this);
+        PIDOuttake outtake = new PIDOuttake(this);
         Gate gate = new Gate(this);
 
         if (opModeIsActive()) {
-            outtake.outtake_motor.setVelocity(1200);
+
+//            outtake.outtake.setVelocity(1200);
+            outtake.turnOnOuttake(1350);
             sleep(500);
             gate.right_servo.setPower(1);//1
             gate.left_servo.setPower(-1);//-1
             sleep(5000);
-            outtake.outtake_motor.setVelocity(0);
+//            outtake.outtake.setVelocity(0);
+            outtake.turnOffOuttake();
             mecanumDrive.back_left.setPower(0.25);
             mecanumDrive.back_right.setPower(0.25);
             mecanumDrive.front_right.setPower(0.25);
             mecanumDrive.front_left.setPower(0.25);
-            sleep(4500);
+            sleep(3000);
             mecanumDrive.back_left.setPower(0.5);
             mecanumDrive.back_right.setPower(-0.5); //negative
             mecanumDrive.front_right.setPower(0.5);
             mecanumDrive.front_left.setPower(-0.5);//negative
-            sleep(1500);
+            sleep(1000);
             mecanumDrive.back_left.setPower(0);
             mecanumDrive.back_right.setPower(0);
             mecanumDrive.front_right.setPower(0);

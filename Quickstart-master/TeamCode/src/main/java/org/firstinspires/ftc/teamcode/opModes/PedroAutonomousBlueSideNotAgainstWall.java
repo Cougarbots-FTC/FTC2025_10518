@@ -1,5 +1,6 @@
 package org.firstinspires.ftc.teamcode.opModes;
 
+import com.qualcomm.hardware.gobilda.GoBildaPinpointDriver;
 import com.qualcomm.robotcore.eventloop.opmode.OpMode;
 import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
 import com.bylazar.configurables.annotations.Configurable;
@@ -21,6 +22,8 @@ public class PedroAutonomousBlueSideNotAgainstWall extends OpMode {
     private TelemetryManager panelsTelemetry;
     public Follower follower;
     private Paths paths;
+
+
 
     public CRServo left_servo = null;
     public CRServo right_servo = null;
@@ -45,6 +48,9 @@ public class PedroAutonomousBlueSideNotAgainstWall extends OpMode {
 
     @Override
     public void init() {
+
+        hardwareMap.get(GoBildaPinpointDriver.class, "imu").resetPosAndIMU();
+
         left_servo = hardwareMap.get(CRServo.class, "Stage1Outtake");
         right_servo = hardwareMap.get(CRServo.class, "Stage1Outtake2");
         outtake_motor = hardwareMap.get(DcMotorEx.class, "OuttakeMotor");
