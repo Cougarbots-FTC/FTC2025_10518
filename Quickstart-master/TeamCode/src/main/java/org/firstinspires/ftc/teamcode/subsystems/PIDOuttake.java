@@ -57,9 +57,11 @@ public class PIDOuttake {
             outtake.setPIDFCoefficients(DcMotor.RunMode.RUN_USING_ENCODER, pidfCoefficients);
 
             outtake.setVelocity(outtakeVelocity);
-        } else {
-            outtake.setVelocity(0);
+        } else if(driver2.left_bumper){
+            outtake.setVelocity(-1350);
             //outtake.setPower(0);
+        }else{
+            outtake.setVelocity(0);
         }
         //outtake.setPower(driver2.left_stick_y);
 
