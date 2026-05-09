@@ -29,7 +29,7 @@ public class Intake {
                 intake_motor.setPower(-1);
         } else if (driver2.right_bumper) {
             intake_motor.setPower(1);
-        else {
+        } else {
             intake_motor.setPower(0);
 //            intake_motor.setVelocity(0);
         }
